@@ -1,0 +1,44 @@
+﻿@page
+@model DeskBookingModel
+<h2>Desk Booking</h2>
+
+<p>
+    <a asp-page="Book Desk">Book Desk</a>
+</p>
+<div class="container">
+    <hr />
+    <br />
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="DeskBookerRequest.FirstName"></label>
+                <input asp-for="DeskBookerRequest.FirstName" class="form-control" />
+                <span class="alert-danger" asp-validation-for="DeskBookerRequest.FirstName"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="DeskBookerRequest.LastName"></label>
+                <input asp-for="DeskBookerRequest.LastName" class="form-control" />
+                <span class="alert-danger" asp-validation-for="DeskBookerRequest.LastName"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="DeskBookerRequest.Email"></label>
+                <input asp-for="DeskBookerRequest.Email" class="form-control" />
+                <span class="alert-danger" asp-validation-for="DeskBookerRequest.Email"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="DeskBookerRequest.Date"></label>
+                <input asp-for="DeskBookerRequest.Date" class="form-control" />
+                <span class="alert-danger" asp-validation-for="DeskBookerRequest.Date"></span>
+            </div>
+        </div>
+        <br />
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <a class="btn btn-default" href="/allcustomer">Cancel</a>
+    </form>
+</div>
