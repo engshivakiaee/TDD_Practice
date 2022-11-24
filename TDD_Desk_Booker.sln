@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core", "DeskBooker.Core\DeskBooker.Core.csproj", "{517F2CDC-ABC0-4E67-BF32-42A262ADE56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.DataAccess", "DeskBooker.DataAccess\DeskBooker.DataAccess.csproj", "{03252E23-B975-4450-9816-E1D208EFB488}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.DataAccess.Tests", "DeskBooker.DataAccess.Tests\DeskBooker.DataAccess.Tests.csproj", "{123DAAAC-5852-4194-AB4B-8FDDEE896929}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Web", "DeskBooker.Web\DeskBooker.Web.csproj", "{A32713C3-3D13-4BBE-9EE7-92BD6218079D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Web.Tests", "DeskBooker.Web.Tests\DeskBooker.Web.Tests.csproj", "{5F86FA45-4645-4AE9-8F97-30D15D85DF7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core.Tests", "DeskBooker.Core.Tests\DeskBooker.Core.Tests.csproj", "{39126E90-9EFF-4CCF-A366-DD2E5198AC66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{517F2CDC-ABC0-4E67-BF32-42A262ADE56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{517F2CDC-ABC0-4E67-BF32-42A262ADE56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{517F2CDC-ABC0-4E67-BF32-42A262ADE56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{517F2CDC-ABC0-4E67-BF32-42A262ADE56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03252E23-B975-4450-9816-E1D208EFB488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03252E23-B975-4450-9816-E1D208EFB488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03252E23-B975-4450-9816-E1D208EFB488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03252E23-B975-4450-9816-E1D208EFB488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{123DAAAC-5852-4194-AB4B-8FDDEE896929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123DAAAC-5852-4194-AB4B-8FDDEE896929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123DAAAC-5852-4194-AB4B-8FDDEE896929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123DAAAC-5852-4194-AB4B-8FDDEE896929}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A32713C3-3D13-4BBE-9EE7-92BD6218079D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A32713C3-3D13-4BBE-9EE7-92BD6218079D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A32713C3-3D13-4BBE-9EE7-92BD6218079D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A32713C3-3D13-4BBE-9EE7-92BD6218079D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F86FA45-4645-4AE9-8F97-30D15D85DF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F86FA45-4645-4AE9-8F97-30D15D85DF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F86FA45-4645-4AE9-8F97-30D15D85DF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F86FA45-4645-4AE9-8F97-30D15D85DF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39126E90-9EFF-4CCF-A366-DD2E5198AC66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39126E90-9EFF-4CCF-A366-DD2E5198AC66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39126E90-9EFF-4CCF-A366-DD2E5198AC66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39126E90-9EFF-4CCF-A366-DD2E5198AC66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
