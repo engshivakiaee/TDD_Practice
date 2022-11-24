@@ -58,6 +58,7 @@ namespace DeskBooker.Web.Tests.Pages
         public void should_add_model_error_if_desk_is_not_available()
         {
             // Arrange
+            _deskBookingModel.ModelState.Clear();
             _deskBookingResult.Code = DeskBookingResultCode.NoDeskAvailable;
 
             // Act
@@ -72,12 +73,28 @@ namespace DeskBooker.Web.Tests.Pages
         public void should_not_add_model_error_if_desk_is_available(int modelErrorCount)
         {
             // Arrange
+            _deskBookingModel.ModelState.Clear();
             _deskBookingResult.Code = DeskBookingResultCode.Success;
             // Act
             _deskBookingModel.OnPost();
 
             // Assert
             Assert.That(modelErrorCount, Is.EqualTo(_deskBookingModel.ModelState.Count));
+        }
+
+        [TestCase(DeskBookingResultCode.Success, true)]
+        [TestCase(DeskBookingResultCode.NoDeskAvailable, false)]
+        public void should_set_view_model_properties_according_to_result(DeskBookingResultCode result, bool expectedDeskBooked)
+        {
+            // Arrange
+            _deskBookingModel.ModelState.Clear();
+            _deskBookingResult.Code = result;
+
+            // Act
+            _deskBookingModel.OnPost();
+
+            // Assert
+            Assert.That(expectedDeskBooked, Is.EqualTo(_deskBookingModel.ModelState.IsValid));
         }
     }
 }
