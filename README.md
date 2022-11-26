@@ -1,4 +1,4 @@
-# TDD_Desk_Booker
+# tdd_practice
 
 Test Driven Development Practice
 
