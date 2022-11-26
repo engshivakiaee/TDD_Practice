@@ -1,10 +1,10 @@
-﻿
-using DeskBooker.Core.Domain;
+﻿using DeskBooker.Core.Domain;
 
 namespace DeskBooker.Core.DataInterface
 {
     public interface IDeskBookingRepository
     {
-        public DeskBookingResult Save(DeskBooking deskBooking);
+        void Save(DeskBooking deskBooking);
+        IEnumerable<DeskBooking> GetAll();
     }
 }

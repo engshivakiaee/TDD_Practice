@@ -8,12 +8,14 @@ namespace DeskBooker.Core.Tests.Processor
     [TestFixture]
     public class DeskBookerRequestProcessorTests 
     {
-        private readonly DeskBookingRequestProcessor _requestProcessor;
-        private readonly DeskBookerRequest _deskBookerRequest;
-        private readonly Mock<IDeskBookingRepository> _deskBookingRepositoryMock;
-        private readonly Mock<IDeskRepository> _deskRepositoryMock;
-        private readonly List<Desk> _availableDesks;
-        public DeskBookerRequestProcessorTests()
+        private DeskBookingRequestProcessor _requestProcessor;
+        private DeskBookerRequest _deskBookerRequest;
+        private Mock<IDeskBookingRepository> _deskBookingRepositoryMock;
+        private Mock<IDeskRepository> _deskRepositoryMock;
+        private List<Desk> _availableDesks;
+        
+        [SetUp]
+        public void Setup()
         {
 
             _deskBookerRequest = new DeskBookerRequest()

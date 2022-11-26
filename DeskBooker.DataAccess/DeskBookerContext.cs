@@ -1,5 +1,6 @@
 ﻿using DeskBooker.Core.Domain;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace DeskBooker.DataAccess
 {

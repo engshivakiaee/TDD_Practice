@@ -12,19 +12,15 @@ namespace DeskBooker.DataAccess.Repositories
             _context = context;
         }
 
-        public DeskBookingResult Save(DeskBooking deskBooking)
+        public IEnumerable<DeskBooking> GetAll()
         {
-            _context.Add(deskBooking);
+            return _context.DeskBooking.OrderBy(x => x.Date).ToList();
+        }
+
+        public void Save(DeskBooking deskBooking)
+        {
+            _context.DeskBooking.Add(deskBooking);
             _context.SaveChanges();
-            return new DeskBookingResult()
-            {
-                Date = deskBooking.Date,
-                DeskBookingId = deskBooking.Id,
-                FirstName = deskBooking.FirstName,
-                LastName = deskBooking.LastName,
-                Email = deskBooking.Email,
-                Code = DeskBookingResultCode.Success,
-            };
         }
     }
 }

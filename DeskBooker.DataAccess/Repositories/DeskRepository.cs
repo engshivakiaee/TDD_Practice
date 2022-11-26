@@ -14,12 +14,19 @@ namespace DeskBooker.DataAccess.Repositories
 
         public IEnumerable<Desk> GetAll()
         {
-           return  _context.Desk.OrderBy(x => x.Id);
+            return _context.Desk.OrderBy(x => x.Id);
         }
 
-        public IEnumerable<Desk> GetAvailableDesks(DateTime dateTime)
+        public IEnumerable<Desk> GetAvailableDesks(DateTime date)
         {
-            return _context.Desk.Where(d => !d.DeskBookings.Any(db => db.Date.Date == dateTime.Date)).ToList();
+            var bookedDeskIds = _context.DeskBooking.
+                 Where(x => x.Date == date)
+                 .Select(b => b.DeskId)
+                 .ToList();
+
+            return _context.Desk
+              .Where(x => !bookedDeskIds.Contains(x.Id))
+              .ToList();
         }
     }
 }

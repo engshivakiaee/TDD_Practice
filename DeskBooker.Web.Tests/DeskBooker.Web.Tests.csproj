@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DeskBooker.DataAccess\DeskBooker.DataAccess.csproj" />
     <ProjectReference Include="..\DeskBooker.Web\DeskBooker.Web.csproj" />
   </ItemGroup>
 
